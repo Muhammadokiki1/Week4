@@ -1,0 +1,306 @@
+.text-center{
+    text-align: center;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    position: absolute;
+    width: 100%;
+    overflow-x: hidden;
+    font-family:  Open Sans, Poppins, sans-serif;
+     
+}
+body::after {
+    content: "";
+    background-image: url(./assets/images/bg-tablet-pattern.svg) ;
+    background-repeat: no-repeat;
+    background-position: 105% -15% ;
+    background-size: 500px; 
+    opacity: 0.5;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+
+}
+p {
+    color: gray;
+}
+h1, h2, h3, h4, h5, h6 {
+    color: #1f2437;
+}
+/* ===========This is the styling for the Navigation Bar============= */
+nav {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 20px;
+    padding: 15px 50px;
+}
+a {
+    padding-left: 15px;
+  
+    padding: 10px ;
+    
+    transition: all 1s;
+    position: relative;
+}
+  
+
+
+nav button {
+    background-color: orangered;
+    padding: 5px 9px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    position: relative;
+    z-index: 2;
+} 
+
+.header-img img {
+    height: 300px;
+    position: relative;
+    z-index: 2;
+    
+}
+/* ========This is the styling for the header======== */
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 10px 50px;
+}
+header h1 {
+    font-size: 4rem;
+    max-width: 600px;
+}
+header p {
+    font-size: 1.1rem;
+    margin: 10px 0;
+    max-width: 380px;
+}
+header button {
+    background-color: orangered;
+    padding: 5px 9px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+}
+.header-img {
+    width: 400px;
+    /* background: url(./assets/images/bg-tablet-pattern.svg) center no-repeat ;
+    background-size: cover; */
+    
+    position: absolute;
+    top: -1px;
+    right: -20px;
+    margin: 70px;
+}
+/* =====This is the styling for the main===== */
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 50px;
+    margin:60px 0;
+}
+.one p {
+    font-size: 1.1rem;
+    max-width: 500px;
+}
+.one h3 {
+    font-size: 2rem;
+    max-width: 400px;
+}
+.words{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 20px auto;
+}
+.one+section h5 {
+    font-size: 1.2rem;
+}
+.one+section p {
+    font-size: 1.1rem;
+    max-width: 500px;
+    
+}
+.no-btn {
+    padding:5px 8px;
+    color: white;
+    border: none;
+    margin-right: 10px;
+    background-color: orangered;
+    border-radius: 15px;
+   height: 30px;
+   width: 40px;
+    text-align: center;   
+}
+.aside>h3 {
+    text-align: center;
+    font-size:2.9rem ;
+    margin: 100px;
+    position: relative;
+    z-index: 2;
+}
+aside {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 50px;
+    position: relative;
+}
+aside img {
+    width: 15vw;
+    height: auto;
+    margin: 0 auto;
+    position: relative;
+    z-index: 2;
+}
+aside h6 {
+    text-align: center;
+    font-size: 1.2rem;
+    position: relative;
+    z-index: 2;
+    margin: 10px;
+}
+aside p {
+    text-align: center;
+    font-size: 1rem;
+    position: relative;
+    z-index: 2;
+    
+}
+hr {
+    margin-top: 70px;
+}
+hr ~ button{
+    background-color: orangered;
+    padding: 5px 9px;
+    border: none;
+    border-radius: 15px;
+    color: white;
+    margin: 10px auto;
+    height: 30px;
+    width: 100px;    
+}
+.aside::after{
+    content: "";
+    background-image: url(./assets/images/bg-tablet-pattern.svg);
+    background-repeat: no-repeat;
+    background-size: 500px;
+    background-position:-18% 60%  ;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    position: absolute;
+}
+/* ===this the styling for the top footer=== */
+.top-footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 50px;
+    background-color: orangered;
+    margin-top: 40px;
+}
+.top-footer h3 {
+    color: white;
+    font-size: 1.5rem;
+    max-width: 300px;
+    
+
+}
+.top-footer button {
+    height: 30px;
+    width: 100px;
+    padding: 5px 9px;
+    background-color: white;
+    color: orangered;
+    border: none;
+    border-radius: 15px;
+    margin: auto 20px;
+    position: relative;
+}
+/* ===this the styling for the bottom footer=== */
+.bottom-footer {
+    background-color: rgb(35, 32, 32);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    padding: 40px 50px;
+}
+.bottom-footer input {
+    border: none;
+    border-radius: 15px;
+    height: 25px;
+    padding: 2px 8px;
+}
+.bottom-footer button {
+    height: 25px;
+    border: none;
+    border-radius: 10px;
+    padding:2px 8px ;
+    background-color: orangered;
+    color: white;
+}
+.bottom-footer p {
+    color: white;
+}
+
+
+/* MEDIA QUERY */
+
+@media screen and (max-width:800px) {
+    header img {
+        display: none;
+    }
+    main, aside, .top-footer, .bottom-footer, nav, header{
+        flex-direction: column;
+        text-align: center;
+        
+    }
+    .top-footer button{
+        margin: 0 auto;
+    }
+    .top-footer h3{
+        margin: 5px auto;
+    }
+    /* .no-btn {
+        /* position: relative;
+        right: 100px; */
+    
+
+    body::after {
+        content: "";
+        background-image: none;       
+    }
+    .aside::after{
+        content: "";
+        background-image: none;       
+    }
+    .one+section p, .one+section h5 {
+        text-align: start;
+    }
+    .bottom-footer div {
+        padding: 10px;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .nav-btn, nav button{
+        display: none;
+    }
+    nav img {
+        text-align: center;
+    }
+    
+   
+}
+
+
+
